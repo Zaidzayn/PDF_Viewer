@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PDF Viewer</h1>
+        </header>
+        <main>
+            <div class="upload-section">
+                <!-- File Upload Button -->
+                <button id="file-input-button" class="file-upload-btn">
+                    <svg
+                        aria-hidden="true"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            stroke-width="2"
+                            stroke="#ffffff"
+                            d="M13.5 3H12H8C6.34315 3 5 4.34315 5 6V18C5 19.6569 6.34315 21 8 21H11M13.5 3L19 8.625M13.5 3V7.625C13.5 8.17728 13.9477 8.625 14.5 8.625H19M19 8.625V11.8125"
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                        ></path>
+                        <path
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                            stroke-width="2"
+                            stroke="#ffffff"
+                            d="M17 15V18M17 21V18M17 18H14M17 18H20"
+                        ></path>
+                    </svg>
+                    ADD FILE
+                </button>
+                <!-- Hidden file input -->
+                <input type="file" id="file-input" accept="application/pdf" style="display: none;">
+            </div>
+            <div id="pdf-render"></div>
+            <div class="controls">
+                <button id="prev-page" class="nav-btn" disabled>Previous</button>
+                <span>Page <span id="current-page">0</span> of <span id="total-pages">0</span></span>
+                <button id="next-page" class="nav-btn" disabled>Next</button>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script src="script.js"></script>    
+</body>
+</html>

@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+header {
+    background: #488aec;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    padding: 20px;
+}
+
+#pdf-render {
+    border: 1px solid #ddd;
+    max-width: 100%;
+    margin-bottom: 20px;
+    overflow: auto;
+    text-align: center;
+}
+
+.controls {
+    text-align: center;
+}
+
+.nav-btn {
+    background: #488aec !important;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.nav-btn:disabled {
+    background: #ccc;
+}
+
+@media (max-width: 600px) {
+    .nav-btn {
+        padding: 8px 16px;
+    }
+}
+
+/* From Uiverse.io by SpatexDEV */ 
+#file-input-button{
+    margin: 0.5rem;
+    border: none;
+    display: flex;
+    padding: 0.3rem 0.9rem;
+    background-color: #488aec;
+    color: #ffffff;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    user-select: none;
+    gap: 0.75rem;
+    box-shadow:
+      0 4px 6px -1px #488aec31,
+      0 2px 4px -1px #488aec17;
+    transition: all 0.6s ease;
+  }
+  
+  #file-input-button:hover {
+    box-shadow:
+      0 10px 15px -3px #488aec4f,
+      0 4px 6px -2px #488aec17;
+  }
+  
+  #file-input-button:focus,
+  #file-input-button:active {
+    opacity: 0.85;
+    box-shadow: none;
+  }
+
+  #file-input-button svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
